@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+
+    
+    <head>
+    <title>zadanie 1.7</title>
+        
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        
+    function oblicz(){
+        
+        
+    var a = document.getElementById("liczba").value;
+    var b = document.getElementById("poprawiny").checked;
+    var suma = 0;
+    if(b == true){
+    
+        suma= a*100+ (0.3*a*100);
+        document.getElementById("wynik").innerHTML="koszt Twojego wesela to:"+suma+"zł";
+    }
+    else{
+        
+        suma= a*100;
+        document.getElementById("wynik").innerHTML="koszt twojego wesela to:"+suma+"zł";
+        
+    }
+        
+    }
+        </script>
+        
+    </head>
+    <body>
+    <h2>Ile będzie kosztowało moje wesele?</h2>
+    Podaj liczbę gości:
+    <input type="number" value="" id="liczba"><br>
+    <input type="checkbox" name="ile" id="poprawiny">Wesele z poprawinami?
+    <br>
+    <input type="button" id="oblicz" value="Oblicz koszt" onclick="oblicz()"><br>
+    <p id="wynik"></p>    
+    
+    
+    </body>
+</html>
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
